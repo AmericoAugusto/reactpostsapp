@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    
+}
+body {
+    background-color: #DDDDDD;
+}
+.container {
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 800px;
+    height: 100vh;
+    display: flex;
+}
+.container-main-tittle {
+    height: 80px;
+    width: 800px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+
+}
+.container-tittle {
+    align-items: center;
+    width: 753px;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: inline-flex;
+}
+
+.form-control {
+    width: 753px;
+    Height: 230px;
+    margin: 10px;
+    padding: 15px;
+    flex-direction: column;
+    display: flex;
+    border: 1px solid black;
+}
+
+.form-control-h3 {
+    border-radius: 2px;
+    width: 700px;
+}
+.form-control-tittle {
+    border-radius: 2px;
+    width: 700px;
+    padding: 0px 0px 0px 2px;
+    border: 1px solid black;
+    max-width: 753px;
+    padding-left: 3px;
+
+}
+.form-control-content {
+    width: 700px;
+    border: 1px solid black;
+    height: 60px;
+    max-width: 753px;
+    padding-left: 3px;
+
+
+}
+
+.form-control-btn {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 111px;
+    height: 33px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: 20px;
+
+}
+
+.btnDeactived {
+    background-color: #777;
+    cursor: help;
+    cursor: pointer;
+}
+.btnActived, .btnDeactived {
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    height: 33px;
+    width: 111px;
+}
+
+.post-tittle header  {
+    background-color: black;
+    color: white;
+    width: 753px;
+    display: flex;
+    height: 25px;
+    line-height: 1px solid black;
+   
+}
+.post-tittle header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: start;
+    padding-left: 10px;
+    width: 40%;
+    color: white;
+   
+}
+.icons {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    width: 60%;
+    cursor: pointer;
+    
+}
+#trash-icon {
+    display: block;
+
+}
+
+
+.post-content {
+    align-items: left;   
+    justify-content: start; 
+    height: 50px;
+    max-height: auto;
+    max-width: 753px;
+    overflow: hidden, scroll;
+    overflow-wrap: break-word;
+
+
+   
+    
+}
+
+.post-content p {
+    justify-content: left;
+    color: black;
+    padding-left: 10px;
+    border: 1px solid black;
+
+}
+
+
+

@@ -1,0 +1,12 @@
+.post > main{
+    display: flex;
+    justify-content: start;
+    width: 90%;
+    margin: 20px auto 20px;
+}
+
+.post > main > p{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
