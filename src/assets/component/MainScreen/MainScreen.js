@@ -5,18 +5,23 @@ import './mainScreen.css';
 
 
 
-const MainScreen = () => {
+const MainScreen = ({openModal, setIsOpen }) => {
+
         const [tittle, setTittle] = useState('');
         const [post, setNewPost] = useState([]);
         const [content, setContent] = useState('');
         const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+        
 
-        const  handleEditPost = () => {
-          let postsCopy = post.filter((item) => item.id);
+        const  handleEditPost = (id) => {
+          let editPost = window.confirm("Are you sure you want to edit this item?");
+  
+           if(editPost){
+            post.map((pst) => pst.id === id);
+           }
         }
-
-      
-
+        
+    
 const handlePostSubmit = (e) => {
      e.preventDefault();
       setNewPost([...post, {
@@ -69,7 +74,7 @@ const deletePost = (id) => {
             />
            
             <button className="form-control-btn" type="submit" disabled={isButtonDisabled}
-             onClick={() => handlePostSubmit(tittle, content)}>POST" </button>
+             onClick={() => handlePostSubmit(tittle, content)}>POST IT!</button>
             
             </form>
             
@@ -82,7 +87,7 @@ const deletePost = (id) => {
             <div className="icons">
             { <>
             <img src={Trash} onClick={() => deletePost(item.id)}  alt="trash-icon" id="trash-icon" />
-            <img src={Change} onClick={handleEditPost} alt="change-icon" id="change-icon"/>
+            <img src={Change}  onClick={() => openModal} alt="change-icon" id="change-icon"/>
             </>}
             </div>
         
@@ -95,13 +100,7 @@ const deletePost = (id) => {
             {post?.map((item) =>
             <p>{item.content}</p>
             )}
-            
             </div>
-
-
-
-
-
 
             <div className="edit-post">
             <form onSubmit={handleEditPost}>

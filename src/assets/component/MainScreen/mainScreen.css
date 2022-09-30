@@ -74,8 +74,7 @@ body {
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: black;
-    color: white;
+
     cursor: pointer;
     width: 111px;
     height: 33px;
@@ -83,20 +82,6 @@ body {
     margin-left: auto;
     margin-right: 20px;
 
-}
-
-.btnDeactived {
-    background-color: #777;
-    cursor: help;
-    cursor: pointer;
-}
-.btnActived, .btnDeactived {
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    height: 33px;
-    width: 111px;
 }
 
 .post-tittle header  {
@@ -129,6 +114,10 @@ body {
 #trash-icon {
     display: block;
 
+}
+#change-icon {
+    display: block;
+    margin-left: 10px;
 }
 
 
