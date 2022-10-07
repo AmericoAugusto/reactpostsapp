@@ -13,9 +13,10 @@ body {
     align-items: center;
     background-color: white;
     width: 800px;
-    height: 100vh;
+    height:  auto;
     display: flex;
 }
+
 .container-main-tittle {
     height: 80px;
     width: 800px;
@@ -85,6 +86,7 @@ body {
 }
 
 .post-tittle header  {
+    margin: auto;
     background-color: black;
     color: white;
     width: 753px;
@@ -101,7 +103,6 @@ body {
     padding-left: 10px;
     width: 40%;
     color: white;
-   
 }
 .icons {
     display: flex;
@@ -122,17 +123,14 @@ body {
 
 
 .post-content {
+    margin: 0px 0px 5px 0px;
     align-items: left;   
     justify-content: start; 
-    height: 50px;
-    max-height: auto;
+    height: auto;
+    width: 753px;
     max-width: 753px;
     overflow: hidden, scroll;
     overflow-wrap: break-word;
-
-
-   
-    
 }
 
 .post-content p {
@@ -144,4 +142,117 @@ body {
 }
 
 
+@media (max-width: 690px) {
+    .container {
+        width: 450px;
+        height: auto;
+        flex-direction: column;
+        overflow-x: hidden;
+
+    }
+    .container-main-tittle {
+        width: 100%;
+        height: 60px;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+    }
+  
+    
+    .form-control {
+        width: 400px;
+        flex-direction: column;
+    }
+    .form-control-tittle {
+        width: 100%;
+        display: flex;
+    }
+    .form-control-content {
+        width: 100%;
+    }
+    .post-tittle header {
+        width: 100%;
+    }
+    .post-content {
+        width: 100%;
+    }
+    
+    .form-control-btn {
+        width: 111px;
+        height: 33px;
+       margin-left: 255px;
+    }
+    .post {
+        width: 400px;
+    }
+    .post-tittle {
+        width: 100%;
+    }
+    .post .post-tittle header {
+        width: 100%;
+
+    }
+    .post-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: 290px;
+        height: auto;
+        flex-direction: column;
+        overflow-x: hidden;
+
+    }
+    .container-main-tittle {
+        width: 100%;
+        height: auto;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+    }
+  
+    
+    .form-control {
+        width: 280px;
+        flex-direction: column;
+    }
+    .form-control-tittle {
+        width: 100%;
+        display: flex;
+    }
+    .form-control-content {
+        width: 100%;
+    }
+    .post-tittle header {
+        width: 100%;
+    }
+    .post-content {
+        width: 100%;
+    }
+    
+    .form-control-btn {
+        width: 111px;
+        height: 33px;
+       margin-left: 135px;
+    }
+    .post {
+        width: 280px;
+    }
+    .post-tittle {
+        width: 100%;
+    }
+    .post .post-tittle header {
+        width: 100%;
+
+    }
+    .post-content {
+        width: 100%;
+    }
+}
 

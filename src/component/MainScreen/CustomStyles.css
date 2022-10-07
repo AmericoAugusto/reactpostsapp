@@ -1,0 +1,171 @@
+
+  .modal {
+    flex-direction: column;
+    width: 600px;
+    padding: 5px;
+    overflow-x: hidden;
+  overflow-y: hidden;
+  }
+
+
+  .ReactModal__Content {
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 300px;
+  border: 1px solid #ccc;
+  background: rgb(196, 8, 8);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-radius: 4px;
+  padding: 20px;
+  width: 50%;
+  height: 40%;
+  text-align: center;
+  display: flex;  
+
+  }
+
+  .modal-title {
+    
+    display: flex;
+  }
+
+  .modal form {
+    flex-direction: column;
+    height: 80%;
+    overflow-x: hidden;
+  overflow-y: hidden;
+  width: 600px;
+
+  }
+
+  .modal-title {
+    display: flex;
+    width: 600px;
+
+  }
+
+  .modal-input-title {
+    display: flex;
+    border-radius: 2px;
+    width: 570px; 
+               padding: 0px 0px 0px 2px;
+    border: 1px solid black;
+    max-width: 753px;
+    padding-left: 3px;
+
+  }
+
+  .modal-content {
+    width: 570px; 
+        display: flex;
+    
+  }
+
+  .modal-input-content {
+    width: 570px; 
+    border: 1px solid black;
+    height: 50px;
+    display: flex;
+    
+  }
+
+  .modal-edit-button {
+    margin-top: 20px;
+    
+   background-color: black;
+    margin-left: 220px;
+    position: absolute;    
+    cursor: pointer;
+    width: 50px;
+    height: 33px;
+    font-weight: 700;
+    
+  }
+
+  .modal-edit-button p {
+    color: white;
+  }
+
+  @media (max-width: 300px) {
+
+  .modal {
+    flex-direction: column;
+    width: 300px;
+    padding: 5px;
+    overflow-x: hidden;
+  overflow-y: hidden;
+  }
+
+
+  .ReactModal__Content {
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 300px;
+  border: 1px solid #ccc;
+  background: rgb(196, 8, 8);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-radius: 4px;
+  padding: 20px;
+  width: 300px;
+
+  height: 40%;
+  text-align: center;
+  display: flex;  
+
+  }
+
+  .modal-title {
+    width: 100%;
+    display: flex;
+  }
+
+  .modal form {
+    flex-direction: column;
+    height: 80%;
+    overflow-x: hidden;
+  overflow-y: hidden;
+  width: 300px;
+  }
+
+  .modal-title {
+    display: flex;
+    width: 100%;
+  }
+
+  .modal-input-title {
+    display: flex;
+    border-radius: 2px;
+    width: 100%;               padding: 0px 0px 0px 2px;
+    border: 1px solid black;
+    max-width: 753px;
+    padding-left: 3px;
+
+  }
+
+  .modal-content {
+    width: 100%;   
+         display: flex;
+    
+  }
+
+  .modal-input-content {
+    width: 100%; 
+       border: 1px solid black;
+    height: 50px;
+    display: flex;
+    
+  }
+
+  .modal-edit-button {
+    width: 300px;
+    height: 33px;
+    font-weight: 700;
+    
+  }
+
+  .modal-edit-button p {
+    color: white;
+  }
+}
