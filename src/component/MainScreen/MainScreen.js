@@ -19,8 +19,8 @@ const MainScreen = () => {
     setIsOpen(true);
   };
 
-  const handleEditPost = () => {
-    
+  const handleEditPost = (e) => {
+    e.preventDefault();
     setNewPost((prev) =>
       prev?.map((item) =>
         item.id === selectedEditId
@@ -124,7 +124,7 @@ const MainScreen = () => {
         contentLabel="Example Modal"
       >
         <div className="modal">
-          <form onClick={handleEditPost}>
+          <form onClick={(id) => handleEditPost}>
             <h3 className="modal-title">Edit item</h3>
             <label className="modal-title">Title</label>
             <input
